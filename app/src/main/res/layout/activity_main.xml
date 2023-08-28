@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EEEC"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/top_background1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="5dp"
+                android:text="HOŞGELDİNİZ"
+                android:textColor="#E96D35"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextMail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:textColorHint="#838080"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="E-MAİL"
+                android:inputType="textPersonName"
+                android:padding="14dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="ŞİFRE,"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColorHint="#838080"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageViewGiris"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="24dp"
+
+                app:srcCompat="@drawable/btn_arraw1"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/facebookButton"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="160dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_background"
+                    android:drawableEnd="@drawable/facebook"
+                    android:paddingEnd="20dp"
+                    android:text="FACEBOOK"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/googleButton"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="160dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/button_background"
+                    android:drawableEnd="@drawable/google"
+                    android:paddingEnd="20dp"
+                    android:text="GOOGLE"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewKaydol"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:text="Hesabın yok mu? Kaydol."
+                android:textColor="#1C1B1B"
+                android:textSize="18sp"
+
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
